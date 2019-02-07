@@ -12,6 +12,7 @@ class BankAccount
   
   def name=(name)
     @name = name 
-    raise 
+    raise NoMethodError if !name.nil?
+  end 
 
 end
