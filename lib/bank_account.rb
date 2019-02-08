@@ -12,7 +12,7 @@ class BankAccount
   
   def name=(name)
     @name = name 
-   
+   raise Exception if !name.nil?
   end 
   
   def deposit(amount)
